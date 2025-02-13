@@ -1,0 +1,41 @@
+display_name: Sparing
+package_name: sparing
+
+maintainer:
+  name: Agung Priyatno
+  email: agungpriyatno@codestack.id
+
+priority: optional
+
+section: x11
+
+installed_size: 15700
+
+dependencies:
+  - mpv
+  - libappindicator3-1 | libayatana-appindicator3-1
+  - gir1.2-appindicator3-0.1 | gir1.2-ayatanaappindicator3-0.1
+  - libsecret-1-0
+  - libnotify-bin
+  - libjsoncpp25
+  - libmpv1 | libmpv2
+  - xdg-user-dirs 
+
+essential: false
+
+icon: linux/assets/icon.png
+
+postuninstall_scripts:
+  - echo "Sorry to see you go."
+
+keywords:
+  - Sparing
+  - Dashboard
+
+generic_name: Sparing Dashboard
+
+categories:
+  - Development
+  - Utility
+
+startup_notify: true
